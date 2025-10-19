@@ -1,4 +1,4 @@
-medusa config.ts: import { defineConfig, loadEnv } from '@medusajs/framework/utils'
+import { defineConfig, loadEnv } from '@medusajs/framework/utils'
 loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 module.exports = defineConfig({
   projectConfig: {
@@ -80,9 +80,6 @@ module.exports = defineConfig({
           }
         ]
       }
-    }
-  ]
-})
     }
   ]
 })
