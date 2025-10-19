@@ -53,4 +53,4 @@ WORKDIR /app/apps/backend
 
 # RUN yarn db:migrate
 
-CMD ["yarn", "start"]
+CMD ["sh", "-c", "yarn medusa db:migrate && yarn start"]
